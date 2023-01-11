@@ -1,7 +1,7 @@
 import cowsay
 
-from toolbox.module_a import do_a_thing as test_a
-from toolbox.module_b import do_a_thing as test_b
+from shared.toolbox.package_a.module_a import do_a_thing as test_a
+from shared.toolbox.package_b.module_b import do_a_thing as test_b
 
 
 def main() -> None:

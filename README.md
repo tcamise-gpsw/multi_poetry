@@ -33,3 +33,18 @@ That ticket has been closed since someone has made a poetry [plugin](https://pyp
 
 Install (globally to Poetry) via: `poetry self add poetry-multiproject-plugin`
 
+See the docs there for more information.
+
+To build:
+
+`poetry build-project`
+
+> Note that once you use packages, you must now also specify the default package:
+> "Using packages disables the package auto-detection feature meaning you have to explicitly specify the “default” package."
+
+### Remaining Questions
+
+How to handle shared dependencies between top level module and toolbox. For example, currently they both need
+to specify cowsay in the `pyproject.toml`
+
+Is the `poetry check-project` we get with the multi-project plugin useful?

@@ -125,24 +125,7 @@ files = [
     {file = "tomli-2.0.1.tar.gz", hash = "sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f"},
 ]
 
-[[package]]
-name = "toolbox"
-version = "0.1.0"
-description = "Common toolbox modules to be shared among top level packages"
-category = "main"
-optional = false
-python-versions = "^3.10"
-files = []
-develop = false
-
-[package.dependencies]
-cowsay = "^5.0"
-
-[package.source]
-type = "directory"
-url = "../toolbox"
-
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "c915a42b2a616dd5da595647a0b6f19d8b09c8b3173dded54eec1a64a18bdda2"
+content-hash = "f39077922abf4942abc42202ae0474acd7bd2095358b85511e614e87de2dbf84"
