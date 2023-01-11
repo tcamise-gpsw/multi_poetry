@@ -1,17 +1,16 @@
 [tool.poetry]
 name = "pywsdk"
-version = "0.5.0"
-description = ""
+version = "0.5.1"
+description = "A top level package called pywsdk"
 authors = ["Tim Camise <tcamise@gopro.com>"]
 readme = "README.md"
 packages = [
-    { include = "toolbox/package_a", from = "../toolbox" },
-    { include = "toolbox/package_b", from = "../toolbox" },
+    { include = "toolbox", from = "../toolbox" },
     { include = "pywsdk", from = "." }
 ]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.9"
 cowsay = "^5.0"
 
 [tool.poetry.group.dev.dependencies]

@@ -1,13 +1,16 @@
 [tool.poetry]
 name = "autoboss"
-version = "0.1.0"
+version = "0.2.0"
 description = "A top level package called autoboss"
 authors = ["Tim Camise <tcamise@gopro.com>"]
 readme = "README.md"
+packages = [
+    { include = "toolbox", from = "../toolbox" },
+    { include = "autoboss", from = "." }
+]
 
 [tool.poetry.dependencies]
-python = "^3.10"
-toolbox = { path = "../toolbox/", develop = true }
+python = "^3.9"
 cowsay = "^5.0"
 
 [tool.poetry.scripts]
